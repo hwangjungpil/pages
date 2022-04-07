@@ -6,7 +6,7 @@
 
 ![canary-animated](assets/canary-animated-1575900930812.gif)
 
-**<Canary 배포 과정>**
+** <Canary 배포 과정> **
 
 ## Canary deployment 구성 방법
 
@@ -63,11 +63,8 @@
 ## Step2 - replica 조정
 
 ![canary-step2](assets/canary-step2.png)
-
 - deployment 의 replica를 조정하여 운영 resource 기준에 맞게 설정 한다.
-
 - 운영 자원이 충분 한 경우 기본 deployment의 replica는 줄일 필요는 없다.
-
 - 수행후 pod의 정상 기동 여부를 확인하는 command를 수행하여 서비스 점검을 수행한다.
 
   ## Step2 - Jenkins 설정
