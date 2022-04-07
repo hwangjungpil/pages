@@ -8,33 +8,33 @@
 
 **<Canary 배포 과정>**
 
-# Canary deployment 구성 방법
+## Canary deployment 구성 방법
 
 - canary 배포에서 사용되는 virtual service의  routing 설정은 weight 설정으로 지정을 하는 방법과 header의 값에 따라 구성하는 방법으로 2가지 방법이 존재 한다.
 
 - 본 가이드에서는 routing 설정에 따라 weight로 지정하는 방법은 **weight based canary deployment** , header의 값에 따라 routing 하는 방법은 **content based canary deployment** 라고 명명해서 설명 하겠다. 
 
-  ## weight based canary deployment
+  ### weight based canary deployment
 
   - 인입 트랜젝션을 weight 에 따라 분배하는 방법으로 weight 값에 따라 Transaction 이 비율로 분배 된다.
 
   - weight 값에 따라 트랜젝션이 달라지기 때문에 서비스의 정상여부를 로그등으로 모니터링 해야 한다.
 
-    ### jenkins template
+    #### jenkins template
 
-    ### 수행 방법
+    #### 수행 방법
 
     
 
-  ## content based canary deployment
+  ### content based canary deployment
 
   - 인입 트랜젠션을 header의 값에 따라 분배한다. 예를 들어 header의 cookie로 .\*man.\* 정규식이 맞는 경우 canary 로 보내게 설정할 경우 man 이란 데이터를 가진 cookie가 있는 경우 canary로 보낼 수 있다.
 
   - 일부 운영자나 일부 사용자 그룹등 미리 운영 상황에 맞게 설정된 사용자를 canary 환경에서 미리 테스트를 수행 할수 있다.
 
-    ### Jenkins template
+    #### Jenkins template
 
-    ### 수행 방법
+    #### 수행 방법
 
     
 
