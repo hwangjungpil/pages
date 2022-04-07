@@ -28,7 +28,7 @@
 
   ## content based canary deployment
 
-  - 인입 트랜젠션을 header의 값에 따라 분배한다. 예를 들어 header의 cookie로 .\*ktman.\* 정규식이 맞는 경우 canary 로 보내게 설정할 경우 ktman 이란 데이터를 가진 cookie가 있는 경우 canary로 보낼 수 있다.
+  - 인입 트랜젠션을 header의 값에 따라 분배한다. 예를 들어 header의 cookie로 .\*man.\* 정규식이 맞는 경우 canary 로 보내게 설정할 경우 man 이란 데이터를 가진 cookie가 있는 경우 canary로 보낼 수 있다.
 
   - 일부 운영자나 일부 사용자 그룹등 미리 운영 상황에 맞게 설정된 사용자를 canary 환경에서 미리 테스트를 수행 할수 있다.
 
