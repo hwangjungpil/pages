@@ -6,7 +6,7 @@
 
 ![canary-animated](assets/canary-animated-1575900930812.gif)
 
-** <Canary 배포 과정> **
+
 
 ## Canary deployment 구성 방법
 
